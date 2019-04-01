@@ -1,0 +1,35 @@
+/*Linked CSS is one of the more popular methods for including CSS. With linked CSS we 
+write all our rules in an external file (typically with a .css file extension) then include the 
+following line within the head of our HTML document.
+
+<link href="css_file.css" rel="stylesheet" type="css" media="all">
+
+The "rel" attribute is used to state the relationsship of the resource to the document. For CSS 
+we use the value "stylesheet" or "alternate stylesheet" (for non-main style sheets). The type 
+attribute allows us to tell the browser what the resource is. This can be ommitted when linking
+to text files but it may become neccessary later on when we do fancier things.
+
+The "media" attribute allows us to define for which media types the rules in this style sheet 
+should be applied. The media could be one of the following:
+
+all - for all devices.
+screen - for computer screens.
+print - for when the document is printed.
+speech - for when the document is spoken (eg. when using a screenreader).
+
+*/
+
+h1 {
+  text-decoration: underline;
+  color: #4583c2;
+}
+
+h2 {
+  padding-left: 10px;
+  color: #2F39CC;
+}
+
+p {
+  padding-left: 20px;
+  font-size: 18px;
+}

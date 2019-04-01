@@ -1,0 +1,46 @@
+CSS is a language for describing the look and formatting of content. Usually this content is in 
+the form of HTML however it is possible to be in other formats as well. CSS is organised as a set 
+of rules that define how different parts of the content should be presented. The actual code 
+looks like this:
+
+selector{
+  property:value;
+  property:value;
+}
+
+* The selector identifies which parts of the content the rules should apply to. The rules that 
+are inside the opening and closing curly brackets ( { } ) are applied to any items matching the 
+selector.
+
+* A property is an aspect of the presentation we would like to set.
+
+* The value is how we would like the property to behave.
+
+* A semicolon is included at the end of each property, value pair to separate it from the next 
+pair.
+
+
+Let's have a quick look at an example of how this works. We'll discuss the properties in this 
+example in a later section:
+
+* CSS
+
+/*This is a comment in CSS*/
+h1 {
+  text-decoration: underline;
+  color: #4583c2;
+}
+
+p {
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+
+* HTML
+<body>
+  <h1>Unicycling</h1>
+  
+  <p>It takes twice the man to ride with half the wheels.</p>
+</body>
+
