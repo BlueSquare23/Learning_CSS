@@ -1,22 +1,22 @@
 <!doctype html>
 <head>
   <title>Sample HTML Page</title>
-  <link href="linked_file.css" rel="stylesheet" type="text/css" media="all">
+  <link href="selectors.css" rel="stylesheet" type="text/css" media="all">
   <meta name="description" content="All about Images">
   <meta name="keyword" content="images html formatting"
 </head>
 
 <body>
-  <a id="top"></a>
-  <h1>Sample HTML Document!</h1>
+  <p><a id="top">TOP!</a></p>
+  <h1 class="header">Sample HTML Document!</h1>
   <p>Click <a href="#bottom" title="Index">here</a> to got to 
 the index of the page!</p>
 
   <a id="section1"></a>
   <hr>
 
-  <h2>Displaying an Image</h2>
-  <img src="baby_cow.jpg" alt="Cute baby cow!">
+  <h2 class="header">Displaying an Image</h2>
+  <p><img src="baby_cow.jpg" alt="Cute baby cow!"></p>
   
   <p>Use the "img" tag to link to an image in an html document.
   <br/> For Example,</p>
@@ -31,7 +31,7 @@ to be rendered.</p>
   <a id="section2"></a>
   <hr>
 
-  <h2>Displaying a List</h2>
+  <h2 class="header">Displaying a List</h2>
 
   <p>There are two types of lists in HTML. Ordered lists use the "ol" tag and are displayed as a 
 numbered set of items. Unordered lists use the "ul" tag and are displayed as a list of bullet 
@@ -57,7 +57,7 @@ points. Both kinds of lists take the "li" attribute which stands for list item.<
   <a id="section3"></a>
   <hr>
 
-  <h2>Displaying a Table</h2>
+  <h2 class="header">Displaying a Table</h2>
  
   <p>The basic tage for building tables is the "table" tag. To create rows and columns within the table use 
 the "tr" (table row) tag followed by the "td" (table data) tag. To give your table a border use the 
@@ -102,7 +102,7 @@ the "tr" (table row) tag followed by the "td" (table data) tag. To give your tab
   <a id="bottom"></a>
   <hr>
 
-  <h2>Index</h2>
+  <h2 class="header">Index</h2>
   
   <p>Click <a href="#top" title="Top!">here</a> to go to the top of the page!</p>
 

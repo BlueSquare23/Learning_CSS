@@ -1,0 +1,144 @@
+/* Selectors 
+
+The selector tells us which items in the HTML the properties should be 
+changed for. The properties may be applied to a single item in the 
+HTML, or to several. So far we have only refered to html items 
+directly. However there are many different ways we can use selectors.
+*/
+
+/* Type Selectors 
+
+The type selector is the most basic selector. It is the name of a HTML 
+tag. When we use this selector, every item in the HTML which is 
+defined by that tag will have the given properties applied to it.
+*/
+
+h1 {
+  font-family: Times New Roman;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+/* Id's Classes
+
+Often, we would like finer grained control over where our CSS rules 
+will be applied. An effective way to achieve this is by way of id's 
+and classes. We apply both of these to the HTML as attributes on tags. 
+The examples below will make it clearer. 
+*/
+
+#top {
+ background-color: #CCCCCC;
+}
+
+/* Classes
+
+A class is similar to an id except it applies to multiple items as 
+opposed to just a single item. To make an item on our page part of a 
+class we add the class attribute to its tag like so in our html.
+
+<tagName class="className">
+*/
+
+.header {
+  font-family: Times New Roman;
+  font-size: 30pz;
+  font-weight: bold;
+  color: yellow;
+  background-color: #730E07;
+  padding: 10px;
+  border: 4px solid #000000;
+}
+
+/* Descendant Elements
+
+With descendant elements we can say that any html items within another 
+type of html item should get a set of properties applied to them. 
+Decendant elements are only applied to the innermost item. We do this 
+by writing the parent selector, followed by the child selector like 
+so,
+
+parentSelector childSelector {
+  property: value;
+  property: value;
+}
+*/
+
+li a {
+  line-height: 30px;
+  color: yellow;
+  background-color: #730E07;
+  padding: 3px;
+  border: 2px solid #000000;
+}
+
+p img {
+  background-color: #730E07;
+  border: 4px solid #000000;  
+}
+
+/* Multiple Selectors
+
+Sometimes you find yourself repeating the same set of properties and 
+values for several different selectors. To make life easier, you can 
+put those properties into their own block and specify that it should 
+apply to multiple selectors at once. To do this, list all the 
+selectors, separated by a comma like so:
+
+selector1, selector2, selector3 {
+  property: value;
+  property: value;
+}
+*/
+
+/* Hover
+
+You have most likely seen the hover selector used to make links change 
+when you hover your mouse over them. We identify a set of properties 
+to be applied when the user hovers their mouse over an item by adding 
+the keyword :hover to the end of the selector.
+
+selector1:hover {
+property: value;
+property: value;
+}
+*/
+
+/*Turns the table heading blue*/
+
+th:hover {
+  color: blue;
+}
+
+/* Psuedo Elements
+
+Pseudo Elements are like elements not in html which you may overlay on 
+a page. There are several built in keywords which can be used in 
+conjunction with pseudo elements to control the positioning of the 
+elements. These keywords include
+
+	* ::first-line
+	* ::first-letter
+	* ::before
+	* ::after
+
+Ex.
+
+selector1::before {
+  content: value;
+  property: value;
+  property: value;
+}
+*/
+
+/*Puts '$' before, and '.' after, table data */
+
+td::before {
+  content: ' $ '
+}
+td::after {
+  content: ' . '
+}

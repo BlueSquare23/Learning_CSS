@@ -1,0 +1,39 @@
+/*Basic Properties
+
+For a full list of CSS Properties be sure to visit the W3C's website. 
+Section 5 of their CSS Level 1 doc sheet provides a long list the 
+properties avilable for writing simple CSS. Go to w3.org for more 
+info.*/
+
+/*Font Family, Color Properties, Padding, and More*/
+
+body {
+  background-color: #6AAFF7;
+}
+
+h1 {
+  font-family: Times New Roman;
+  font-size: 30pz;
+  font-weight: bold;
+  color: yellow;
+  background-color: #730E07;
+  padding: 10px;
+  border: 4px solid #000000;
+}
+
+h2 {
+  text-indent: 2em;
+  font-family: Verdana;
+  font-size: 25px;
+  font-weight: bold;
+  color: yellow;
+  background-color: #730E07;
+  margin: 10px 40em 8px 20px;
+  border-bottom: 2px dashed #000000;
+}
+
+p {
+  font-size: 18px;
+  font-family: Times New Roman;
+  font-weight: 300;
+}
